@@ -6,6 +6,19 @@
 <body>
 	<h1>Using ERB With Sinatra</h1>
 
-	<!-- Write your code here -->
+	<h1><%= "I love " + "Ruby!!" %></h1>
+  <%= 1 + 1 %><br><br>
+  <% if 1 == 2 %>
+    <p>1 equals 2.</p>
+  <% else %>
+    <p>1 does not equal 2.</p>
+  <% end %>
+
+  <% wall_posts = ["First post!", "Second post!", "Hello, it's your mother, why don't you ever call me?"] %>
+  <ul>
+<% wall_posts.each do |post| %>
+  <li><%= post %></li>
+<% end %>
+</ul>
 </body>
 </html>
